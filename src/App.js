@@ -18,6 +18,7 @@ function App() {
   useEffect(() => {
     axios.get(`${API}/transactions`).then((response) => {
       const { data } = response;
+      
       setTransactions(data);
     });
   }, []);
